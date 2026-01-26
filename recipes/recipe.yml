@@ -17,7 +17,7 @@ modules:
   - type: rpm-ostree
     repos:
         - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-    packages:
+    install:
       - dnf-plugins-core
       - brave-browser
       - 1password
