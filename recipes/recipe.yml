@@ -17,13 +17,12 @@ modules:
   - type: rpm-ostree
     repos:
         - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
-    install:
-      packages:
-        - dnf-plugins-core
-        - brave-browser
-        - 1password
-        - VK_hdr_layer
-        - neovim
+    packages:
+      - dnf-plugins-core
+      - brave-browser
+      - 1password
+      - VK_hdr_layer
+      - neovim
 
   - type: default-flatpaks
     configurations:
