@@ -17,12 +17,14 @@ modules:
   - type: rpm-ostree
     repos:
         - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
+        - https://repo.nextdns.io/nextdns.repo
     install:
       - dnf-plugins-core
       - brave-browser
       - https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
       - VK_hdr_layer
       - neovim
+      - nextdns
 
   - type: default-flatpaks
     configurations:
