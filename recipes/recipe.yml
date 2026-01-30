@@ -29,7 +29,7 @@ modules:
       - https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm
       - mpv
       - ffmpeg
-   remoev:
+   remove:
       - ffmpeg-free
 
   - type: default-flatpaks
