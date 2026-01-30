@@ -21,12 +21,14 @@ modules:
     install:
       - dnf-plugins-core
       - brave-browser
-      - https://downloads.1password.com/linux/rpm/stable/x86_64/1password-latest.rpm
       - VK_hdr_layer
       - neovim
       - nextdns
       - mpv
       - firefox
+  - type: script
+    scripts:
+      - 1password-install.sh
 
   - type: default-flatpaks
     configurations:
