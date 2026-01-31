@@ -26,9 +26,7 @@ modules:
       - nextdns
       - mpv
       - firefox
-  - type: script
-    scripts:
-      - 1password-install.sh
+      - 1password
 
   - type: default-flatpaks
     configurations:
