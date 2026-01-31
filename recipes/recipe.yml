@@ -20,14 +20,15 @@ modules:
         - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
         - https://repo.nextdns.io/nextdns.repo
     install:
-      - dnf-plugins-core
-      - brave-browser
-      - VK_hdr_layer
-      - neovim
-      - nextdns
-      - mpv
-      - firefox
-      - 1password
+      packages:
+        - dnf-plugins-core
+        - brave-browser
+        - VK_hdr_layer
+        - neovim
+        - nextdns
+        - mpv
+        - firefox
+        - 1password
 
   - type: default-flatpaks
     configurations:
