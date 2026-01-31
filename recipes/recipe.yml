@@ -14,8 +14,9 @@ modules:
       - source: system
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
-  - type: rpm-ostree
+  - type: dnf
     repos:
+      files:
         - https://brave-browser-rpm-release.s3.brave.com/brave-browser.repo
         - https://repo.nextdns.io/nextdns.repo
     install:
